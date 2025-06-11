@@ -1,6 +1,6 @@
 .barraS {
-    background-color: #e0e0e0;
-    border-bottom: 2px solid #999;
+    background-color: #22abbd;
+    border-bottom: 2px solid #3250d6;
     padding: 0;
     width: 100%;
     position: fixed;
@@ -10,10 +10,20 @@
 }
 
 
+.barraS ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border: 1px solid #2870c2;
+}
+
 
 .barraS li {
     flex: 1;
-    border-right: 1px solid #999;
+    border-right: 1px solid #465cdb;
     text-align: center;
 }
 
@@ -31,18 +41,42 @@
 }
 
 .barraS a:hover {
-    background-color: #ccc;
+    background-color: #4a99e4;
 }
 
+body {
+    margin: 0;
+    padding-top: 60px;
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
 
 .caja{
-    border: 4px solid #444;
+    border: 4px solid #304cec;
     border-radius: 20px;
-    background-color: #ffffff;
+    background-color: #39bdc2;
     padding: 30px;
     max-width: 600px;
     width: 100%;
     margin-top: 200px;
+}
+
+.forma {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
 }
 
 
@@ -58,7 +92,7 @@
     font-weight: bold;
 }
 
-.labelinput {
+.label input {
     flex: 1;
     padding: 8px;
     border: 1px solid #999;
@@ -66,14 +100,14 @@
 }
 
 
-.boton {
+.boton-container{
     display: flex;
     align-items: center;
     justify-content: center;
     min-width: 120px;
 }
 
-.boton button {
+.boton-container button {
     width: 80px;
     height: 80px;
     font-size: 14px;
