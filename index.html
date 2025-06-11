@@ -7,19 +7,34 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <li><a href="#">Inicio</a></li>
-    <li><a href="#">Conocenos</a></li>
-    <li><a href="#">Producto</a></li>
-    <li><a href="#">Registro</a></li>
-    <li><a href="#">Contacto</a></li>
 
-    <label for="web">Web</label>
-        <input type="url" name="web" id="web">
-    <label for="Nombre">Nombre</label>
-        <input type="text" name="Nombre" id="Nombre">
-    <label for="web">Apellido</label>
-        <input type="text" name="Apellido" id="Apellido">
-    <label for="Buscar">Buscar</label>
-        <input type="button" name="Buscar" id="Buscar">
+<nav class="barraS">
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Conócenos</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Registro</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</nav>
+<div class="caja">
+    <form class="a">
+        <div class="inputs">
+    <div class="label">
+        <label for="web">Web:</label>
+            <input type="url" id="web" name="web" placeholder="https://accounts.google.com/signup">
+        </div>
+            <div class="label">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Juan">
+        </div>
+            <div class="label">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Pablo">
+        </div>
+    </div>
+    <div class="boton">
+        <button type="submit">Buscar</button>
+    </div>
 </body>
 </html>
